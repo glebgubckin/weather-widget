@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.weather-widget {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  font-family: 'Roboto', sans-serif;
+  color: #232323;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.input {
+  width: 100%;
+  padding: 4px;
+  font-size: 20px;
+  border: 1px rgba(0,0,0,1) solid;
+
+  &:focus {
+    outline: 1px rgb(94, 210, 248) solid;
+    border: 1px rgba(0,0,0,0) solid;
+  }
+}
+
+.modal {
+  padding: 15px;
+  width: 100%;
+
+  &__add {
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+.cities {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 15px;
+
+  &__delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.city {
+  padding: 8px;
+  background-color: #cccccc;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+}
+
+.burger {
+  padding-top: 5px;
+  cursor: grab;
+}
+
+.add-location {
+  margin-top: 30px;
+}
+
+.error {
+  margin-top: 15px;
+}
+
+.widgets {
+  position: relative;
+  padding: 15px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 70px;
+}
+
+.widget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 15px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+}
+
+.weather {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  &__temp {
+    font-size: 32px;
+    font-weight: 700;
+  }
+}
+
+.settings {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  border: none;
+  background: none;
+  width: 25px;
+  cursor: pointer;
+  z-index: 1000;
+
+  &__img {
+    height: 25px;
+  }
+}

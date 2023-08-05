@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "NodeNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable"]
+  },
+  "files": [
+    "./vue-shims.d.ts"
+  ],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "vue-shims.d.ts", "src/web-components-wrapper.d.ts"],
+  "exclude": ["node_modules"]
+}
