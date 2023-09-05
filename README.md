@@ -20,3 +20,6 @@ You can find script which you have to add to your HTML file in
 ## Tech Stack
 
 Vue, TypeScript, Scss, Webpack
+
+## Demo
+[https://weather-widget-bice.vercel.app](https://weather-widget-bice.vercel.app)
